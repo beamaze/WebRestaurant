@@ -9,22 +9,50 @@
 
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'mainpage/mainpage.css' %}"> 
+
    
 </head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+</style>
+
 
 <body>	
 	<div class = "titleBox thingsInTitle">
     	<h1 href = "#" class = "titleBox-title">Jasmine Thai Cuisine</h1>
     	<ul class="titleBoxList">
-            <li class="titleBoxItem"><a href="/" class="titleBoxLink">Home</a></li>
-            <li class="titleBoxItem"><a href="/Menu" class="titleBoxLink">Menu</a></li>
-            <li class="titleBoxItem"><a href="/Food Gallery" class="titleBoxLink">Food Gallery</a></li>
-            <li class="titleBoxItem"><a href="/Location and Service Hours" class="titleBoxLink">Location and Service Hours</a></li>
-            <li class="titleBoxItem"><a href="#" class="Contact Us">Contact Us</a></li>
+            <li> <a href="/" >Home</a></li>
+            <li> <a href="/menu" >Menu</a></li>
+            <li> <a href="/Food Gallery" >Food Gallery</a></li>
+            <li> <a href="/Location and Service Hours" >Location and Service Hours</a></li>
+            <li> <a href="#" >Contact Us</a></li>
         </ul>
     </div>
     
-    <h2>A few facts abput the world we live in</h2>
+    <!--<h2>A few facts abput the world we live in</h2>
 
     <iframe align = "right" width="560" height="315" src="https://www.youtube.com/embed/uLUvHUzd4UA" frameborder="0" allowfullscreen></iframe>
 
@@ -61,17 +89,17 @@
     <h6>WANT TO KNOW MORE?</h6>
 
 
-    <form href = "http://www.google.com">
+    <form action = "http://www.google.com">
         
 
 
-        <input type = "submit" value = "click here" href = "http://www.google.com" />
+        <input type = "submit" value = "click here" />
     
 
 
     </form>
 
-
+-->
 
 </body>
 </html>
