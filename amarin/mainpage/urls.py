@@ -6,4 +6,5 @@ app_name = 'main_page'
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^menu/?$', views.menu, name='menu'),
 ]
