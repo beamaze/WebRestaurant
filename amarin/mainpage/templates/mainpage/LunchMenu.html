@@ -8,7 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
    
 </head>
+
 <body>
+	{% if menu %}
+	<ul>
+		{% for item in menu %}
+			<li>{{ item.name_text }}</br>
+			{{ item.description_text }}</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+		<p>No items</p>
+	{% endif %}
+	<!--
 	<div class = "Rice Plate">
 		<h1> Rice Plate </h1>
 		<h4> Rice plate served with white or brown (extra $1) rice</h4>
@@ -94,6 +106,8 @@
  		</p>
 
 	</div>
+
+	-->
 
 </body>
 
